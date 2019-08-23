@@ -1,0 +1,39 @@
+<html>
+<body>
+<h1>Super Advanced Login Page</h1>
+<form>
+    <label>
+        Username: <input id="username-input" type="text">
+    </label>
+    <br>
+
+    <label>
+        Password: <input id="password-input" type="password">
+    </label>
+    <br>
+</form>
+<label>
+    <button id="submit-button" onClick="userValidate()">Submit</button>
+</label>
+<br>
+<br>
+<label>
+    Login status: <span id="test-status">Nope</span>
+</label>
+</body>
+<script>
+    function userValidate() {
+        let username = document.getElementById('username-input').value;
+        let password = document.getElementById('password-input').value;
+        let testStatusElement = document.getElementById('test-status');
+
+        if (username === 'admin' && password === 'password') {
+            testStatusElement.innerHTML = 'Authenticated';
+        } else {
+            testStatusElement.innerHTML = 'Failed';
+        }
+
+        return false;
+    }
+</script>
+</html>

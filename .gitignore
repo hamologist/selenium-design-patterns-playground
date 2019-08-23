@@ -1,0 +1,17 @@
+.*.swp
+*.pyc
+*.pyo
+*.egg-info
+bin/
+lib/
+build/
+dist/
+env/
+__pycache__/
+
+pip-selfcheck.json
+pyvenv.cfg
+poetry.lock
+.DS_Store
+.idea
+.vscode
